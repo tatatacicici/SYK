@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+
+.navbar {
+    background-color: #242424;
+}
+
+.navbar-brand {
+    color: white;
+    padding-right: 90vh;
+    padding-left: 10vh;
+}
+
+.navbar-nav .nav-link {
+    background-color: #242424;
+    color: white;
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: red;
+}
+.navbar-brand:hover {
+    background-color: transparent !important;
+    color: white !important;
+    cursor: default;
+}
+
+/* CSS untuk kontainer gambar */
+.gambar-hello {
+    background-image: url('/Assets/harimau.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    width: 100%;
+    height: 92.9vh;
+    position: relative;
+}
+
+.gambar-hello::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.hallo {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.nama-tengah {
+    font-size: 24px;
+}
+
+.tombol-cv {
+    color: black;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.about-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+}
+.about-me{
+ color: red;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    margin-top: 30px;
+}
+.teks-awal{
+    font-size: 75px;
+    color: red;
+    font-weight: bold;
+}
