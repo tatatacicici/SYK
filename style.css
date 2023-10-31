@@ -14,7 +14,10 @@
     margin-top: 0;
     z-index: 1;
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 /* Navbar */
 .navbar {
     background-color: #242424;
@@ -119,4 +122,159 @@
 .projek h3 {
     margin-top: 20px;
     color: red;
+    font-size: 32px;
 }
+.projek h5{
+    font-size: 20px;
+    font-weight: lighter
+}
+/*Kontak*/
+.kontainer-kontak {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+    margin-left: 40px;
+    cursor: pointer;
+    padding: 30px;
+    justify-content: center;
+    max-width: 130px;
+}
+
+.logo img {
+    border: black;
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+/*Footer*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*Responsive*/
+/*Tab*/
+@media (max-width: 850px) {
+    .navbar-brand {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+
+    .gambar-hello {
+        height: 70vh;
+    }
+
+    .hallo {
+        font-size: 24px;
+    }
+
+    .tombol-cv {
+        width: 120px;
+        height: 30px;
+        font-size: small;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+
+    .teks-awal {
+        font-size: 40px;
+    }
+
+    .projek {
+        padding: 20px;
+    }
+
+    .projek h3 {
+        font-size: 24px;
+    }
+    .projek img{
+        width: 100%;
+        object-fit: cover;
+
+
+    }
+
+    .kontainer-kontak {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* Handphone */
+@media (max-width: 576px) {
+    .navbar-brand {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 5px;
+    }
+
+    .hallo {
+        font-size: 20px;
+    }
+
+    .tombol-cv {
+        width: 100px;
+        height: 25px;
+        font-size: small;
+    }
+
+    .teks-awal {
+        font-size: 32px;
+    }
+
+    .projek h3 {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+    .projek img {
+        width: 100%;
+        height: calc((100vw - 40px) * 0.75);
+        object-fit: cover;
+    }
+}
+
+
+
+
