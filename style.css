@@ -1,3 +1,4 @@
+/* Global */
 * {
     padding: 0;
     margin: 0;
@@ -6,21 +7,28 @@
     color: white;
 }
 
+/*Sub*/
 .teks-sub {
-    color: red;
+    color: #f9532d;
     text-align: center;
     position: relative;
     padding: 60px 7% 1.4rem;
     margin-top: 0;
     z-index: 1;
+    font-family: 'Poppins', sans-serif;
 }
+
+/* Gambar */
 img {
     max-width: 100%;
     height: auto;
 }
-/* Navbar */
+
+/* Navbar Styles */
 .navbar {
     background-color: #242424;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .navbar-brand {
@@ -30,28 +38,28 @@ img {
 }
 
 .navbar-nav .nav-link {
-    background-color: #242424;
     color: white;
     margin-right: 30px;
 }
 
-.navbar-nav .nav-link:hover {
-    color: red;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+    color: #f9532d;
 }
 
 .navbar-brand:hover {
-    background-color: transparent !important;
     color: white !important;
     cursor: default;
 }
 
-/* Hello */
+/* Hello Section Styles */
 .gambar-hello {
     background-image: url('/Assets/harimau.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     margin-top: 0;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -75,6 +83,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .tombol-cv {
@@ -87,7 +96,7 @@ img {
     cursor: pointer;
 }
 
-/* About Me */
+/* About Me Section Styles */
 .about-container {
     display: flex;
     flex-direction: row-reverse;
@@ -95,6 +104,7 @@ img {
     justify-content: space-between;
     margin-bottom: 120px;
     margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-image {
@@ -105,11 +115,12 @@ img {
 
 .teks-awal {
     font-size: 75px;
-    color: red;
+    color: #f9532d;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Project */
+/* Project Section Styles */
 .projek {
     justify-content: center;
     align-items: center;
@@ -121,14 +132,18 @@ img {
 
 .projek h3 {
     margin-top: 20px;
-    color: red;
+    color: #f9532d;
+    font-family: 'Poppins', sans-serif;
     font-size: 32px;
 }
-.projek h5{
+
+.projek h5 {
+    font-family: 'Oxygen', sans-serif;
     font-size: 20px;
-    font-weight: lighter
+    font-weight: lighter;
 }
-/*Kontak*/
+
+/* Kontak Section Styles */
 .kontainer-kontak {
     display: flex;
     flex-direction: row;
@@ -136,6 +151,7 @@ img {
     justify-content: center;
     text-align: center;
     margin-top: 50px;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .logo {
@@ -149,23 +165,34 @@ img {
     max-width: 130px;
 }
 
+.logo :hover {
+    text-decoration: none;
+}
+
 .logo img {
     border: black;
     border-radius: 30px;
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
+    margin-left: 40px;
 }
-/*Footer*/
+.logo p{
+
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
+    font-family: 'Oxygen', sans-serif;
 }
 
-/*Responsive*/
-/*Tab*/
+/* Responsive Styles */
+
+/* Tablet Styles */
 @media (max-width: 850px) {
     .navbar-brand {
         padding-right: 20px;
@@ -211,11 +238,10 @@ footer {
     .projek h3 {
         font-size: 24px;
     }
-    .projek img{
+
+    .projek img {
         width: 100%;
         object-fit: cover;
-
-
     }
 
     .kontainer-kontak {
@@ -234,8 +260,7 @@ footer {
     }
 }
 
-
-/* Handphone */
+/* Mobile Styles */
 @media (max-width: 576px) {
     .navbar-brand {
         padding-right: 10px;
@@ -268,13 +293,10 @@ footer {
         width: 60px;
         height: 60px;
     }
+
     .projek img {
         width: 100%;
         height: calc((100vw - 40px) * 0.75);
         object-fit: cover;
     }
 }
-
-
-
-
