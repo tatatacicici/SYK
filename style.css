@@ -99,25 +99,32 @@ img {
 /* About Me Section Styles */
 .about-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 120px;
     margin-top: 10px;
+    margin-left: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
 .about-image {
-    flex: 1;
+    /*flex: 1;*/
     text-align: center;
     margin-top: 30px;
 }
 
-.teks-awal {
+.dataku h1{
     font-size: 75px;
     color: #f9532d;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+}
+.dataku h3{
+    font-size: 48px;
+}
+.dataku h5{
+    font-size: 32px;
+    font-weight: lighter;
 }
 
 /* Project Section Styles */
@@ -227,8 +234,16 @@ footer {
         margin-top: 20px;
     }
 
-    .teks-awal {
+    .dataku h1 {
         font-size: 40px;
+    }
+    .dataku h3{
+       font-size: 32px;
+        font-weight: normal;
+    }
+    .dataku h5{
+        font-size: 28px;
+        font-weight: lighter;
     }
 
     .projek {
@@ -281,10 +296,18 @@ footer {
         font-size: small;
     }
 
-    .teks-awal {
+    .dataku h1 {
         font-size: 32px;
     }
+    .dataku h3{
+        font-size: 24px;
+        font-weight: normal;
+    }
 
+    .dataku h5{
+        font-size: 18px;
+        font-weight: lighter;
+    }
     .projek h3 {
         font-size: 20px;
     }
