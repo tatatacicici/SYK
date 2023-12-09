@@ -54,7 +54,7 @@ img {
 
 /* Hello Section Styles */
 .gambar-hello {
-    background-image: url('/Assets/harimau.jpg');
+    background-image: url('/Assets/Images/harimau.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
